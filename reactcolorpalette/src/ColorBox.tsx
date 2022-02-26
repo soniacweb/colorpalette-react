@@ -8,11 +8,25 @@ export interface ColorBoxProps {
 }
 const ColorBox = ({ background, name }: ColorBoxProps) => {
   //   const [value, setValue] = useState("");
-  //   const [copied, setCopied] = useState(false);
+  const [copied, setCopied] = useState(false);
   console.log("Color", background);
+  function changeCopyState() {
+    setCopied(true);
+    setTimeout(() => {
+      setCopied(false);
+    }, 1500);
+  }
   return (
-    <CopyToClipboard text={background}>
+    <CopyToClipboard text={background} onCopy={() => changeCopyState()}>
       <div style={{ background }} className="ColorBox">
+        <div
+          style={{ background }}
+          className={`copy-overlay ${copied && "show"}`}
+        />
+        <div className={`copy-msg ${copied && "show"}`}>
+          <h1>copied</h1>
+          <p>{background}</p>
+        </div>
         <div className="copy-container">
           <div className="box-content">
             <span>{name}</span>
