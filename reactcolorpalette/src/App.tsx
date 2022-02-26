@@ -6,7 +6,7 @@ function App() {
   console.log("Seed4", SeedData[4].paletteName);
   return (
     <div>
-      <Palette {...SeedData[4]} />
+      <Palette {...SeedData[2]} />
     </div>
   );
 }
