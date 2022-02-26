@@ -2,8 +2,8 @@
 
 ## 💪🏾 Team
 
-Hoda Mire
-Sonia Choudhury
+- Hoda Mire
+- Sonia Choudhury
 
 ## 🚀 Stack
 
