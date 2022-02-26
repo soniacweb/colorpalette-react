@@ -3,9 +3,10 @@ import Palette from "./Palette";
 import SeedData from "./SeedColorPicker";
 
 function App() {
+  console.log("Seed4", SeedData[4].paletteName)
   return (
     <div>
-      <Palette colors={SeedData[4]} />
+      <Palette colorData={SeedData[4]} />
     </div>
   );
 }
