@@ -42,7 +42,9 @@
   },
   "description": "## 💪🏾 Team",
   "main": "index.js",
-  "devDependencies": {},
+  "devDependencies": {
+    "prettier": "2.5.1"
+  },
   "author": "",
   "license": "ISC"
 }
