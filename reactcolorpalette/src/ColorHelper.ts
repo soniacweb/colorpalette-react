@@ -7,11 +7,11 @@ function generatePalette(starterPalette: any) {
     emoji: starterPalette.emoji,
     colors: {},
   };
-  for (let level of levels) {
-    newPalette.colors[level] = [];
-  }
-  for (let color of starterPalette.colors) {
-  }
+  // for (let level of levels) {
+  //   newPalette.colors[level] = [];
+  // }
+  // for (let color of starterPalette.colors) {
+  // }
 }
 
 // {
